@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Students Portal</title>
+</head>
+<body>
+    
+    <form action="/" method="POST" class="client_form">
+            <h2 class="heading--tertiary">My Classes</h2>
+            <label for="class_id" class="client_label">Unit ID:</label>
+            <input type="text" name="class_id" id="class_id"  class = "client_input" maxlength="30" minlength="5" required value="<%=unitcode%>">
+            <label for="class_name" class="client_label">Class Name:</label>
+            <input type="text" name="class_name" id="class_name" class = "client_input"  maxlength="30" minlength="5" required value="<%=unitname%>">
+            <label for="student_id" class="client_label">Student ID:</label>
+            <input type="text" name="student_id" id="student_id"  class = "client_input" maxlength="30" minlength="10" required placeholder="HDB212-C004-0905/2017">
+            <label for="student_name" class="client_label">Student Name</label>
+            <input type="text" name="student_name" id="student_name:"  class = "client_input" maxlength="30" minlength="6" required placeholder="Student name">
+            <input type= "submit" class="submit" >
+    </form>
+    
+</body>
+<script src="/form.js"></script>
+</html>
